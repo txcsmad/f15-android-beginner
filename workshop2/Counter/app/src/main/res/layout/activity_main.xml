@@ -1,0 +1,44 @@
+<!-- Note: This automatically generated relative layout is a subclass of the "View" class also -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <!-- Note: "dp" is short for "Device Independent Pixel", one of several units of measurement in Android.
+    Related Stack Overflow thread: http://stackoverflow.com/questions/2025282/difference-between-px-dp-dip-and-sp-in-android -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:textSize="100sp"
+        android:id="@+id/numberText"
+        android:layout_centerHorizontal="true"/>
+
+
+    <!-- Note: The "parent" in centerInParent refers to the RelativeLayout that was generated automatically -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/incrementButton"
+        android:layout_centerInParent="true"
+        android:onClick="incrementNumber" />
+
+    <!-- Note: a UI element's location can be set in relation to where other UI elements are located.
+    "@+id/" is used when assigning an id, and "@id/" is used when referencing an id -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/resetButton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/incrementButton"
+        android:layout_marginTop="30dp"
+        android:onClick="reset"/>
+
+
+</RelativeLayout>
