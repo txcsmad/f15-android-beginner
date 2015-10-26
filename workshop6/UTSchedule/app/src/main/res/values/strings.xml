@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UTSchedule</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
+    <string name="vollyText">UT Volleyball</string>
+    <string name="footballText">UT Football</string>
+</resources>
